@@ -1,3 +1,5 @@
+###  To get here http://bit.ly/nss_js_errors
+
 A simple example with some javascript errors to work through
 
 to clone into your own backlift project click here
