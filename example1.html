@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Example 1</title>
+    <script src="jquery.min.js"></script>
+    <script src="backlift-reloader.js"></script>
+    <link type="text/css" rel="stylesheet" href="bootstrap.css"></link>
+    <script>
+      $(document).ready(function(){
+        clickCount = 1;
+        $("a.click").click(function(ev){
+          ev.preventDefault()
+          ev.stopPropagation()
+
+          var clickCount = clickCount + 1;
+
+          alert("the count is " + clickCount)
+        })
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="hero-unit">
+        <h3>Something is broken</h3>
+        <p>Site content</p>
+        <a href="#" class="click btn">Should show click count</a>
+      </div>
+    </div>
+
+  </body>
+</html>
